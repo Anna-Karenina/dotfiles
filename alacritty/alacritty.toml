@@ -1,0 +1,40 @@
+live_config_reload = true
+
+import = ["~/.config/alacritty/color_theme.toml"]
+
+[window]
+decorations = "Full"
+dynamic_padding = false
+opacity = 0.8
+startup_mode = "Maximized"
+blur = true
+[window.padding]
+x = 10
+y = 12
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "SFMono Nerd Font"
+style = "Heavy"
+
+[font.bold_italic]
+family = "SFmono Nerd Font"
+style = "Heavy Italic"
+
+[font.italic]
+family = "SFmono Nerd Font"
+style = "Medium Italic"
+
+[font.normal]
+family = "SFmono Nerd Font"
+style = "Medium"
+
+
+[keyboard]
+  bindings = [
+    { key = "Right", mods = "Alt", chars = "\u001BF" },
+    { key = "Left",  mods = "Alt", chars = "\u001BB" },
+    { key = "Enter", mods = "Command", action = "ToggleFullscreen"},
+  ]
